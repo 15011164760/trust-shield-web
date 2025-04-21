@@ -2,7 +2,7 @@
  * @Author: yangdongxu
  * @Date: 2025-04-21 16:09:41
  * @LastEditors: yangdongxu
- * @LastEditTime: 2025-04-21 17:20:39
+ * @LastEditTime: 2025-04-21 17:41:22
  * @FilePath: \trust-shield-web\src\App.vue
 -->
 <script setup lang="ts">
@@ -24,7 +24,6 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
 

@@ -97,3 +97,15 @@ export default defineConfig({
 })
 
 ```
+
+### node-sass 与 sass 的区别
+
+node-sass：基于 LibSass 的 Node.js 绑定，但已停止积极维护，不推荐在新项目中使用。
+sass（Dart Sass）：官方推荐的 Sass 实现，使用 Dart 编写，性能更好且支持最新 Sass 特性。
+建议：在 Node.js 18+ 中，优先使用 sass 而不是 node-sass。
+
+### 2. 安装sass
+
+```
+npm install sass --save-dev
+```
