@@ -2,7 +2,7 @@
  * @Author: yangdongxu
  * @Date: 2025-04-21 16:09:41
  * @LastEditors: yangdongxu
- * @LastEditTime: 2025-04-21 16:50:26
+ * @LastEditTime: 2025-04-21 17:20:39
  * @FilePath: \trust-shield-web\src\App.vue
 -->
 <script setup lang="ts">
@@ -11,6 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+    <el-button type="danger">Danger</el-button>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 

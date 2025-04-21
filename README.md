@@ -62,3 +62,38 @@ npm install element-plus --save
 ```
 npm install axios
 ```
+
+### 按需导入element-plus
+
+您需要使用额外的插件来导入要使用的组件。
+
+#### 自动导入
+
+首先你需要安装unplugin-vue-components 和 unplugin-auto-import这两款插件
+
+npm install -D unplugin-vue-components unplugin-auto-import
+然后把下列代码插入到你的 Vite 或 Webpack 的配置文件中
+
+Vite按需引入element-plus配置
+
+```
+// vite.config.ts
+import { defineConfig } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+export default defineConfig({
+  // ...
+  plugins: [
+    // ...
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
+  ],
+})
+
+```
