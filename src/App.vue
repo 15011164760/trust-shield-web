@@ -2,7 +2,7 @@
  * @Author: yangdongxu
  * @Date: 2025-04-21 16:09:41
  * @LastEditors: yangdongxu
- * @LastEditTime: 2025-04-21 16:46:45
+ * @LastEditTime: 2025-04-21 16:50:26
  * @FilePath: \trust-shield-web\src\App.vue
 -->
 <script setup lang="ts">
@@ -18,7 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">111Home1111111111</RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>

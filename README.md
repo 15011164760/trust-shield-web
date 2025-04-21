@@ -51,9 +51,13 @@ npm run lint
 
 ```
 
+### 下载UI组件库 作用：快速搭建页面
+
 ```
-npm install element-plus
+npm install element-plus --save
 ```
+
+### 下载axios 作用：发送网络请求
 
 ```
 npm install axios
