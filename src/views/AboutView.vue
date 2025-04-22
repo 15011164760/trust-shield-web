@@ -2,7 +2,7 @@
  * @Author: yangdongxu
  * @Date: 2025-04-21 16:09:41
  * @LastEditors: yangdongxu
- * @LastEditTime: 2025-04-21 18:50:41
+ * @LastEditTime: 2025-04-22 18:12:56
  * @FilePath: \trust-shield-web\src\views\AboutView.vue
 -->
 <script setup lang="ts">
@@ -12,7 +12,8 @@ let data = ref(); // 定义一个响应式数据
 let selectData = ref(); // 定义一个响应式数据
 const fetchData = async () => {
   try {
-    let reqData = await http.get('https://jsonplaceholder.typicode.com/posts'); // 使用封装好的 Axios 实例发送请求
+    // let reqData = await http.get('https://jsonplaceholder.typicode.com/posts'); // 使用封装好的 Axios 实例发送请求
+    let reqData = await http.get('/posts'); // 使用封装好的 Axios 实例发送请求
     data.value = reqData; // 获取响应数据
     console.log('Fetched data:', reqData);
   } catch (error) {

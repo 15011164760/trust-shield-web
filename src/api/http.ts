@@ -2,7 +2,7 @@
  * @Author: yangdongxu
  * @Date: 2025-04-21 18:31:48
  * @LastEditors: yangdongxu
- * @LastEditTime: 2025-04-21 18:31:54
+ * @LastEditTime: 2025-04-22 18:10:10
  * @FilePath: \trust-shield-web\src\api\http.ts
  */
 // src/utils/http.js
@@ -11,7 +11,7 @@ import axios from 'axios'
 
 // 创建一个 Axios 实例
 const http = axios.create({
-  baseURL: 'https://api.example.com', // 替换为你的 API 基础 URL
+  baseURL: import.meta.env.VITE_API_URL, // 根据环境变量动态设置基础 URL
   timeout: 5000, // 请求超时时间
   headers: {
     'Content-Type': 'application/json',
